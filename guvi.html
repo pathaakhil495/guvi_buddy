@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GUVI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: orangered;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #555;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            margin: 0 10px;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: absolute;
+            bottom: 10;
+            width: 100%;
+        }
+
+        .embed-responsive {
+            position: relative;
+            padding-bottom: 46.50%;
+        }
+
+        .embed-responsive .video-stream {
+            height: auto;
+        }
+
+        .home_video_color {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+
+        #chatBotContainer {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            z-index: 9999; 
+        }
+
+        #chatBotButton {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>GUVI</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <section>
+        <h2>Welcome to GUVI</h2>
+        <p>GUVI (an acronym for Grab Your Vernacular Imprint) is an IIT Madras and IIM Ahmedabad incubated company based in Chennai, India. It was founded by ex-PayPal engineers Arun Prakash, Sridevi Arun Prakash, and SP Balamurugan in 2014. GUVI offers free and paid learning courses on various IT and tech domains in Indian vernacular languages such as Tamil, Telugu, Hindi, Kannada, Bengali, and English</p>
+    </section>
+
+    <div class="embed-responsive embed-responsive-16by9 banner">
+        <video autoplay="0" muted="" loop="" class="video-stream"
+            src="https://www.alohatechnology.com/file/about-alohatechnology.mp4" style="height: auto;"></video>
+        <div class="home_video_color"
+            style="position: absolute;top: 0;left:0; height: 100%;width: 100%; background: rgba(0,0,0,0.5);"></div>
+    </div>
+
+    <div id="chatBotContainer">
+        <iframe width="350" height="430" allow="microphone;"
+            src="https://console.dialogflow.com/api-client/demo/embedded/8972f6b7-3d87-4742-bd16-c3868266e9cb"></iframe>
+    </div>
+
+    <footer>
+        &copy; 2024 GUVI. All rights reserved.
+    </footer>
+
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+
+</body>
+
+</html>
